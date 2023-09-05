@@ -77,7 +77,7 @@ engine: knitr
 :::
 
 :::{.column width="40%"}
-The CSS rules.
+The CSS rules
 
 ```{verbatim, lang="CSS"}
 
