@@ -2,7 +2,10 @@
 title: "Lucid Chart Embedding in Quarto"
 format:
   revealjs:
+    slide-number: c/t
     code-copy: true
+    highlight-style: a11y
+    link-external-newwindow: true
     theme: styles.scss
 width: 2500
 height: 1406
@@ -51,9 +54,30 @@ A similar effect can be achieved with [Quarto fragments](https://quarto.org/docs
 
 ## Resources
 
-Full code at
+:::: {.columns}
 
-Preview of the CSS rules.
+:::{.column width="60%"}
+The presentation YAML
+
+```{verbatim, lang="YAML"}
+---
+title: "Lucid Chart Embedding in Quarto"
+format:
+  revealjs:
+    slide-number: c/t
+    code-copy: true
+    highlight-style: a11y
+    link-external-newwindow: true
+    theme: styles.scss
+width: 2500
+height: 1406
+engine: knitr
+---
+```
+:::
+
+:::{.column width="40%"}
+The CSS rules.
 
 ```{verbatim, lang="CSS"}
 
@@ -88,4 +112,9 @@ Preview of the CSS rules.
 }
 
 ```
+:::
+::::
 
+<br>
+
+Full code at [https://github.com/jeremy-allen/diagrams-in-quarto.git](https://github.com/jeremy-allen/diagrams-in-quarto.git)
