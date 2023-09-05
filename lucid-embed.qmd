@@ -20,9 +20,7 @@ Lucid charts can have interactive layers and action buttons, making it possible 
 
 ---
 
-:::
 <iframe allowfullscreen frameborder="0" style="width: 100%; height: 1200px;" src="https://lucid.app/documents/embedded/8bc2637d-8ba2-481d-80a6-7ddc3575b3f4" id="IMXr7.a1dSVA"></iframe>
-:::
 
 # Now using Quarto fragments
 
