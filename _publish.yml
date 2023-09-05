@@ -1,0 +1,4 @@
+- source: lucid-embed.qmd
+  quarto-pub:
+    - id: 6311be71-23b1-4f42-94b7-b5c5bbad8621
+      url: 'https://jeremydata.quarto.pub/lucid-chart-embedding-in-quarto'

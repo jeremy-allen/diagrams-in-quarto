@@ -1,0 +1,91 @@
+---
+title: "Lucid Chart Embedding in Quarto"
+format:
+  revealjs:
+    code-copy: true
+    theme: styles.scss
+width: 2500
+height: 1406
+engine: knitr
+---
+
+# Why would you embed an iframe of a Lucid Chart instead of just a screenshot of it?
+
+:::{.fragment}
+Lucid charts can have interactive layers and action buttons, making it possible to incrementally reveal portions of a larger more complex diagram. This gradual build up is easier for viewers to follow than a giant diagram presented all at once.
+:::
+
+---
+
+:::{.r-stretch}
+<iframe allowfullscreen frameborder="0" style="width:1800px; height:1125px;" src="https://lucid.app/documents/embedded/8bc2637d-8ba2-481d-80a6-7ddc3575b3f4" id="IMXr7.a1dSVA"></iframe>
+:::
+
+# Now using Quarto fragments
+
+:::{.fragment}
+A similar effect can be achieved with [Quarto fragments](https://quarto.org/docs/presentations/revealjs/advanced.html#fragments). I use a screenshot of the whole diagram that has been sliced into multiple images using Adobe Illustrator. In Quarto, each image is then loaded in a `{.fragment #id}` element, and each each id has a CSS chunk that specifies its absolute position.  
+:::
+
+---
+
+:::{#workbench}
+![](images/workbench.png)
+:::
+
+:::{.fragment #connect}
+![](images/connect.png)
+:::
+
+:::{.fragment #ppm}
+![](images/ppm.png)
+:::
+
+:::{.fragment #hexes}
+![](images/team-hexes.png)
+:::
+
+:::{.fragment #link}
+[https://solutions.posit.co/gallery/bike_predict/](https://solutions.posit.co/gallery/bike_predict/)
+:::
+
+## Resources
+
+Full code at
+
+Preview of the CSS rules.
+
+```{verbatim, lang="CSS"}
+
+#workbench {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+
+#connect {
+    position: absolute;
+    top: 4px;
+    left: 919px;
+}
+
+#ppm {
+    position: absolute;
+    top: 683px;
+    left: 5px;
+}
+
+#hexes {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#link {
+    position: absolute;
+    bottom: 0px;
+    left: 31px;
+}
+
+```
+
